@@ -18,9 +18,6 @@ var router = ms.daorouter(model, {
         },
     }
 });
-router.useField({
-    field: 'tags'
-});
 app.use(router);
 
 var log = function (err, doc) {
@@ -115,37 +112,6 @@ var del = function (opts) {
     });
 };
 
-var listTag = function (opts) {
-    return new Promise(function (resolve, reject) {
-        logger.debug('listTag');
-        app.get(
-            '/' + id + '/tags',
-            {
-                page: 1,
-                rows: 10
-            },
-            function (err, doc) {
-                done(resolve, reject, err, doc);
-            }
-        );
-    });
-};
-
-var addTag = function (opts) {
-    return new Promise(function (resolve, reject) {
-        logger.debug('addTag');
-        app.post(
-            '/' + id + '/tags',
-            {
-                page: 1,
-                rows: 10
-            },
-            function (err, doc) {
-                done(resolve, reject, err, doc);
-            }
-        );
-    });
-};
 
 add()
     .then(function (doc) {
@@ -159,9 +125,6 @@ add()
     })
     .then(function (doc) {
         return get();
-    })
-    .then(function (doc) {
-        return listTag();
     })
     .then(function (doc) {
         return del();
