@@ -1,6 +1,5 @@
-var jm = require('jm-dao');
+require('jm-dao');
 var mongoose = require('mongoose');
-mongoose.Promise = require('bluebird');
 var Schema = mongoose.Schema;
 
 var schemaDefine = {
@@ -22,7 +21,7 @@ var schemaDefine = {
 
 var schema = new Schema(schemaDefine);
 var dbUri = 'mongodb://localhost/test';
-jm.DB.connect(dbUri);
+jm.db.connect(dbUri);
 
 var model = jm.dao(
     {

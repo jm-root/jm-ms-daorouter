@@ -1,8 +1,10 @@
 var Promise = require('bluebird');
-var jm = require('../lib');
+require('jm-ms-core');
+require('jm-logger');
+require('../lib');
 var ms = jm.ms;
 var logger = jm.logger;
-var utils = ms.utils;
+var utils = jm.utils;
 var model = require('./model');
 var app = ms();
 var router = ms.daorouter(model, {
