@@ -1,6 +1,6 @@
 {
   "name": "jm-ms-daorouter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "dao router plugin for jm-ms base on jm-dao",
   "main": "./lib/index",
   "scripts": {
