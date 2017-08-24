@@ -1,6 +1,6 @@
 {
   "name": "jm-ms-daorouter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "dao router plugin for jm-ms base on jm-dao",
   "main": "./lib/index",
   "scripts": {
@@ -23,7 +23,8 @@
   },
   "homepage": "https://github.com/jm-root/jm-ms-daorouter",
   "dependencies": {
-    "jm-ms-core": "^1.0.1"
+    "jm-log4js": "^1.1.1",
+    "jm-ms-core": "^1.0.2"
   },
   "devDependencies": {
     "bluebird": "*",
