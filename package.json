@@ -1,6 +1,6 @@
 {
   "name": "jm-ms-daorouter",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "dao router plugin for jm-ms base on jm-dao",
   "main": "./lib/index",
   "scripts": {
@@ -23,19 +23,19 @@
   },
   "homepage": "https://github.com/jm-root/jm-ms-daorouter",
   "dependencies": {
-    "jm-ms-core": "*"
+    "jm-ms-core": "~0"
   },
   "devDependencies": {
-      "jm-dao": "*",
-      "bluebird": "*",
-      "jshint": "*",
-      "gulp": ">=3.5.6",
-      "gulp-clean": ">=0.3.1",
-      "gulp-concat": ">=2.2.0",
-      "gulp-jshint": ">=1.5.1",
-      "gulp-rename": ">=1.2.0",
-      "gulp-sequence": ">=0.3.0",
-      "gulp-uglify": ">=0.3.1",
-      "gulp-util": ">=2.2.14"
+    "bluebird": "^3.5.1",
+    "gulp": ">=3.5.6",
+    "gulp-clean": ">=0.3.1",
+    "gulp-concat": ">=2.2.0",
+    "gulp-jshint": ">=1.5.1",
+    "gulp-rename": ">=1.2.0",
+    "gulp-sequence": ">=0.3.0",
+    "gulp-uglify": ">=0.3.1",
+    "gulp-util": ">=2.2.14",
+    "jm-dao": "^0.0.6",
+    "jshint": "*"
   }
 }
